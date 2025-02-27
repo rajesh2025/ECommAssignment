@@ -5,9 +5,6 @@ import com.rajesh.ecommassignment.data.model.Product
 import com.rajesh.ecommassignment.data.remote.ProductApi
 import com.rajesh.ecommassignment.domain.model.ProductOnDisplay
 import com.rajesh.ecommassignment.domain.repository.ProductRepository
-import io.ktor.client.HttpClient
-import io.ktor.client.call.body
-import io.ktor.client.request.get
 
 
 class ProductRepositoryImpl(

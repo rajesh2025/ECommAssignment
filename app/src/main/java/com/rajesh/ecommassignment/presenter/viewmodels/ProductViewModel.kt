@@ -5,11 +5,13 @@ import androidx.lifecycle.viewModelScope
 import com.rajesh.ecommassignment.domain.model.ProductOnDisplay
 import com.rajesh.ecommassignment.domain.usecase.GetProductDetailUseCase
 import com.rajesh.ecommassignment.domain.usecase.GetProductsUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@HiltViewModel
 class ProductViewModel @Inject constructor(
     private val getProductsUseCase: GetProductsUseCase,
     private val getProductDetailUseCase: GetProductDetailUseCase

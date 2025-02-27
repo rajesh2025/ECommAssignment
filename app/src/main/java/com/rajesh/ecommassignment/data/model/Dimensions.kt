@@ -1,10 +1,12 @@
 package com.rajesh.ecommassignment.data.model
 
+
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
 data class Dimensions(
-    val depth: Double,
-    val height: Double,
-    val width: Double
+    @SerialName("width") val width: Double? = null,
+    @SerialName("height") val height: Double? = null,
+    @SerialName("depth") val depth: Double? = null
 )

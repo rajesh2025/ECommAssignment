@@ -1,11 +1,13 @@
 package com.rajesh.ecommassignment.data.model
 
+
+import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 @Serializable
 data class Meta(
-    val barcode: String,
-    val createdAt: String,
-    val qrCode: String,
-    val updatedAt: String
+    @SerialName("createdAt") val createdAt: String? = null,
+    @SerialName("updatedAt") val updatedAt: String? = null,
+    @SerialName("barcode") val barcode: String? = null,
+    @SerialName("qrCode") val qrCode: String? = null
 )
